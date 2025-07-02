@@ -14,7 +14,9 @@
 #
 #ASCII generated on:( https://patorjk.com/software/taag/)
 
-# Check out the installation script down below.
+# Installation script.
+
+
 echo " 
 This is a dotfile installation script. Do you want to continue the installation? 
 "
@@ -25,4 +27,6 @@ case "$answer" in
   [Nn]) echo "Exiting."; exit 1;;
   *) echo "Invalid input."; exit 2;;
 esac
-#There will be a wiki page appearing for this soon. Check out: (https://github.com/Aron22563/my-dots/wiki/Roadmap)
+
+
+# There will be a wiki page appearing for this soon. Check out: (https://github.com/Aron22563/my-dots/wiki/Roadmap)
