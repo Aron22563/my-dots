@@ -1,5 +1,4 @@
 # my-dots
-**WORK IN PROGRESS**
 
 # Install
 You will step by step: 
@@ -13,10 +12,12 @@ cd my-dots/
 
 **Check out my dotfiles** <br>
 This is a repository for my personal dotfiles. In here i share mostly configuration for the programs i personally use, namely: 
-- `waybar`
-- `apvlv`
+
+- `hyprland`
 - `bash`
-- `git`
+- `kitty`
 - `vim`
+- `git`
+- `waybar`
 
 Check out the [Wiki](https://github.com/Aron22563/my-dots/wiki)

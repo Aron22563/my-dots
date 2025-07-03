@@ -9,6 +9,5 @@ programs/bash/.bash_profile
 packages/hypr/
 packages/kitty/
 packages/vim/
-packages/git/
 packages/waybar/
 
