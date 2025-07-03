@@ -5,4 +5,10 @@ build/
 programs/bash/.bash_logout
 programs/bash/.bash_profile
 
+# Not yet ready to run:
+packages/hypr/
+packages/kitty/
+packages/vim/
+packages/git/
+packages/waybar/
 
