@@ -1,0 +1,83 @@
+{
+// General settings
+  "spacing": 6,
+
+// Modules left
+  "modules-left": ["hyprland/workspaces"],
+
+  "hyprland/workspaces": {
+    "format": "{icon} {windows}",
+    "format-window-separator": " ",
+    "tooltip-format": "Hyprland workspaces",
+    "window-rewrite-default": "",
+    "active-first": true,
+    "window-rewrite": {
+      "title<.*youtube.*>": " ",
+      "title<.*github.*>": " ",
+      "class<brave-browser>": " ",
+      "class<spotify>": " ",
+      "kitty": " "
+    }
+  },
+
+// Modules right
+  "modules-right": [
+    "network",
+    "pulseaudio",
+    "disk",
+    "tray",
+    "clock"
+    //"custom/power"
+  ],
+
+  "network": {
+    "interval": 1,
+    "format": "{bandwidthDownBytes}{icon}↓  {bandwidthUpBytes}↑",
+    "format-alt": "{ifname}: {ipaddr}",
+    "format-disconnected": "Disconnected",
+    "on-click": "format-alt"
+  },
+
+  "pulseaudio": {
+    "format": "{volume}% {icon} {format_source}",
+    "format-muted": " ",
+    "format-source": "{volume}% ",
+    "format-source-muted": "",
+    "on-click": "pavucontrol",
+    "format-icons": {
+      "headphone": "  ",
+      "hands-free": " ",
+      "default": ["", " ", " "]
+    }
+  },
+
+  "disk": {
+    "interval": 30,
+    "format": "{percentage_used}% ",
+    "on-click": "baobab"
+  },
+
+  "tray": {
+    "icon-size": 21,
+    "spacing": 10
+  },
+
+  "clock": {
+    "format": "{:%Y-%m-%d | %H:%M}",
+    "tooltip-format": "<big>{:%Y %B %m %d}</big>\n<tt><small>{calendar}</small></tt>",
+    "format-alt": "{:%Y-%m-%d}"
+  }
+
+ /* "custom/power": {
+    "format": "⏻ ",
+    "tooltip": true,
+    "menu": "on-click",
+    "menu-file": "$MY_DOTS_DIR/packages/waybar/.config/waybar/power_menu.xml", 
+    "menu-actions": {
+      "shutdown": "shutdown now",
+      "reboot": "reboot",
+      "suspend": "systemctl suspend",
+      "logout": "hyprlock"
+    }
+  }*/
+}
