@@ -1,1 +1,8 @@
+# Ignore build folder
 build/
+
+# This section covers which possible customizations might be useful sometime but are not yet implemented to a degree where it would be worth sharing. 
+programs/bash/.bash_logout
+programs/bash/.bash_profile
+
+
