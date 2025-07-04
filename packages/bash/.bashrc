@@ -5,7 +5,7 @@
 # Bash login shell stuff, should probably not be changed.
 [[ $- != *i* ]] && return
 
-export MY_DOTS_DIR="$HOME/my-dots/"
+export MY_DOTS_DIR="$HOME/my-dots"
 source "$MY_DOTS_DIR/scripts/helpers.bash"
 source "$HOME/.config/bash/bash_loader.bash"
 
