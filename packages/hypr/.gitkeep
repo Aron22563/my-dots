@@ -1,0 +1,1 @@
+# Keep package path structure consistent (Otherwise hypr would be shortened to hypr/.config/hypr on github)
