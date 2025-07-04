@@ -2,11 +2,11 @@
 build/
 
 # This section covers which possible customizations might be useful sometime but are not yet implemented to a degree where it would be worth sharing. 
-programs/bash/.bash_logout
-programs/bash/.bash_profile
-
+packages/bash/.bash_logout
+packages/bash/.bash_profile
+packages/waybar/power_menu.xml
 # Not yet ready to run:
-packages/hypr/
+packages/hyprland/
 packages/kitty/
 packages/vim/
 
