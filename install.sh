@@ -2,8 +2,7 @@
 #                                      |  \           |  \              
 # ______ ____   __    __           ____| $$  ______  _| $$_     _______ 
 # |      \    \ |  \  |  \ ______  /      $$ /      \|   $$ \   /       \
-# | $$$$$$\$$$$\| $$  | $$|      \|  $$$$$$$|  $$$$$$\\$$$$$$  |  $$$$$$$
-# | $$ | $$ | $$| $$  | $$ \$$$$$$| $$  | $$| $$  | $$ | $$ __  \$$    \ 
+# | $$$$$$\$$$$\| $$  | $$|      \|  $$$$$$$|  $$$$$$\\$$$$$$  |  $$$$$$$ # | $$ | $$ | $$| $$  | $$ \$$$$$$| $$  | $$| $$  | $$ | $$ __  \$$    \ 
 # | $$ | $$ | $$| $$__/ $$        | $$__| $$| $$__/ $$ | $$|  \ _\$$$$$$\
 # | $$ | $$ | $$ \$$    $$         \$$    $$ \$$    $$  \$$  $$|       $$
 #  \$$  \$$  \$$ _\$$$$$$$          \$$$$$$$  \$$$$$$    \$$$$  \$$$$$$$ 
@@ -35,11 +34,41 @@ source "$MY_DOTS_DIR/scripts/helpers.bash"
 
 # Overwrite files
 owfiles_list=(
+  # Hypr
+  "$HOME/hypr"
+
+  # Bash 
   "$HOME/.config/user-dirs.dirs"
+  "$HOME/.bashrc/"
+  "$HOME/.bash_logout"
+  "$HOME/.bash_profile"
+
+  # Kitty
+  "$HOME/.config/kitty/kitty.conf"
+
+  # Vim 
+  "$HOME/.vim"
+  "$HOME/.vimrc"
+
+  # Git 
+  "$HOME/.gitconfig"
+
+  # Waybar 
+  "$HOME/.config/waybar"
 )
+
 # Which package requests the overwrite
 owfiles_package=(
+    "hypr"
     "bash"
+    "bash"
+    "bash"
+    "bash"
+    "kitty" 
+    "vim" 
+    "vim"
+    "git"
+    "waybar"
 )
 
 mkdir -p "$MY_BACKUP_DIR"
@@ -59,7 +88,7 @@ for i in "${!owfiles_list[@]}"; do
           store "$package"; 
           ;;
         2)
-          rm "$file"
+          rm -r "$file"
 	  echo "$package"
           store "$package"; 
           ;;
@@ -75,5 +104,6 @@ for i in "${!owfiles_list[@]}"; do
 else store "$package"
   fi
 done
+exec hyprctl reload
 #
 # There will be a wiki page appearing for this soon. Check out: (https://github.com/Aron22563/my-dots/wiki/Roadmap)
