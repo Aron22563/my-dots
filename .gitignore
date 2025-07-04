@@ -5,8 +5,8 @@ build/
 packages/bash/.bash_logout
 packages/bash/.bash_profile
 packages/waybar/.config/waybar/power_menu.xml
+
 # Not yet ready to run:
-packages/hyprland/
 packages/kitty/
 packages/vim/
 
