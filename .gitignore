@@ -8,7 +8,8 @@ packages/waybar/.config/waybar/power_menu.xml
 
 
 # These parts are permanently excluded because of personal data/ repo structure and clarity maintenance. 
-packages/vim/.vim/plugged
+# packages/vim/.vim/plugged/
+
 # Not yet ready to run:
 packages/kitty/
 
